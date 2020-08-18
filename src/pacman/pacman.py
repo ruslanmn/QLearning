@@ -1,6 +1,5 @@
 import arcade
 import numpy as np
-from map_init import tiles
 from os.path import isfile
 
 

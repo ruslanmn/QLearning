@@ -1,5 +1,5 @@
 import arcade
-from tictactoe_model import TicTacToeModel
+from ttt.tictactoe_model import TicTacToeModel
 
 
 class MyGame(arcade.Window):
