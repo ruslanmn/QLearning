@@ -15,22 +15,21 @@ class TicTacToeModel:
     def act(self, x, y):
         if self.fields[y, x] == 0:
             self.fields[y, x] = self.player
-            result = self.game_state()
             self.player = 2 if self.player == 1 else 1
-            return result
+            return self.game_state()
         else:
             return -1
 
     """
         0 - continue
-        1,2 - player won
-        3 - draw
+        1 - player won
+        2 - draw
     """
     def game_state(self):
         if self.check_win():
-            return self.player
+            return 1
         elif self.check_draw():
-            return 3
+            return 2
         else:
             return 0
 
