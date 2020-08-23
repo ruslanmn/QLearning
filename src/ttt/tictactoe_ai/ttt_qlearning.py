@@ -9,7 +9,7 @@ LOAD = False
 FILEMASK = 'agent_%d.npy'
 
 REWARD = 10
-W = 3   
+W = 3
 H = 3
 WIN_SIZE = 3
 PLAYERS_SIZE = 2
