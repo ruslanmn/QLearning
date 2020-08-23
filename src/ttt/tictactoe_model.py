@@ -6,7 +6,7 @@ class TicTacToeModel:
         self.win_size = win_size
         self.w = w
         self.h = h
-        self.fields = np.zeros((h, w))
+        self.fields = np.zeros((h, w), dtype=int)
 
         self.player = 1
 
@@ -34,7 +34,8 @@ class TicTacToeModel:
             return 0
 
     def reset(self):
-        self.fields = np.zeros(np.shape(self.fields))
+        self.fields = np.zeros(np.shape(self.fields), dtype=int)
+        self.player = 1
 
     def check_win(self):
         def check_seq(x_start, y_start, dx, dy):
